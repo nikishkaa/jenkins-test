@@ -1,5 +1,5 @@
 FROM openjdk:17-oracle
 EXPOSE 8083
 ARG JAR_FILE=target/*.jar
-COPY ${JAR_FILE} app.jar
+COPY ${JAR_FILE} jenkin-test-v2.jar
 ENTRYPOINT ["java","-jar","/jenkin-test-v2.jar"]
