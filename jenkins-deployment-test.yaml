@@ -17,7 +17,7 @@ spec:
           image: nikishka/jenkin-test-v2
           imagePullPolicy: IfNotPresent
           ports:
-            - containerPort: 8089
+            - containerPort: 8083
 ---
 apiVersion: v1
 kind: Service
@@ -28,5 +28,5 @@ spec:
   selector:
     app: jenkins-test
   ports:
-    - port: 8089
-      targetPort: 8089
+    - port: 8083
+      targetPort: 8083
